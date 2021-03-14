@@ -75,7 +75,7 @@ For i = 0 To 11
     Worksheets("AllStocksAnalysis").Activate
     Cells(4 + i, 1).Value = tickers(i)
     Cells(4 + i, 2).Value = tickerVolumes(i)
-    Cells(4 + i, 3).Value = (tickerEndingPrices(i) /     	tickerStartingPrices(i)) - 1        
+    Cells(4 + i, 3).Value = (tickerEndingPrices(i) / tickerStartingPrices(i)) - 1        
 Next i
 ```
 
@@ -95,6 +95,7 @@ If I had to mention a disadvantage to refactoring code, I would have to say that
 - How do these pros and cons apply to refactoring the original VBA script?
 
 In the case of the VBA script, refactoring my code took the run-time down from 0.7347 seconds on average (N=10) to 0.1492 seconds (N=10) for the 2017 data set and down from 0.7486 seconds on average (N=10) to 0.1481 seconds for the 2018 data set. 
+
 ![Comparison of averages](/Screenshots/runtime_averages.PNG)
 This is a great improvement.
 
