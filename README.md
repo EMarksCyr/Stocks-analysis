@@ -97,6 +97,7 @@ If I had to mention a disadvantage to refactoring code, I would have to say that
 In the case of the VBA script, refactoring my code took the run-time down from 0.7347 seconds on average (N=10) to 0.1492 seconds (N=10) for the 2017 data set and down from 0.7486 seconds on average (N=10) to 0.1481 seconds for the 2018 data set. 
 
 ![Comparison of averages](/Screenshots/runtime_averages.PNG)
+
 This is a great improvement.
 
 With regards to the con of added complexity, I found that it didn't have too great an impact on refactoring the VBA script because I was encountering all of the elements of code for the first time while writing the original script. Things were a lot easier to make sense of as I refactored because I had already learned how to use arrays, for-loops, and conditional statements. I actually found the refactoring quite simple this time, but I could imagine that it can be an incredibly frustrating process with more complex code. I still think it will be worth it, though; this was a valuable lesson. 
